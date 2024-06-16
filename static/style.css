@@ -1,0 +1,38 @@
+body {
+    background-color: black;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3 {
+    color: white;
+    text-align: center;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+    overflow: hidden; /* Ensure no overflow */
+}
+
+.img {
+    width: 100%; /* Ensure image resizes to fit container */
+    max-height: calc(100vh - 200px); /* Limit maximum height, adjust as needed */
+    text-align: center; /* Center content horizontally */
+    margin-top: 20px;
+    overflow: hidden; /* Hide overflow if image is too large */
+    display: flex;
+    justify-content: center;
+}
+
+.img img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain; /* Maintain aspect ratio */
+}
+

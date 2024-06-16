@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=7, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}">
+    <script src="{{url_for('static',filename='main.js')}}"></script>
+    <title>get memes!</title>
+</head>
+<body>
+    <div class="main">
+        <h1>website to get some memes</h1>
+        <br>
+        <h2>Here is the meme!this will refresh in 30 seconds!</h2>
+        <br>
+        <h1>title:{{title}}</h1>
+        <br>
+        <div class="img">
+            <img id="memeImage" src="{{img}}" alt="Random Meme">
+        </div>
+        <br>
+        <h1>subreddit:{{subreddit}}</h1>
+</div>
+</body>
+</html>
